@@ -1,0 +1,4 @@
+/home/jscherman/Desktop/taller-hash/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jscherman/Desktop/taller-hash/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jscherman/Desktop/taller-hash/cmake-build-debug/CMakeFiles/runTests.dir
+/home/jscherman/Desktop/taller-hash/cmake-build-debug/CMakeFiles/tallerHash.dir

@@ -73,27 +73,30 @@ namespace aed2 {
 
 		void redimensionarTabla(){
 			//assert(false);
-			Lista<TElem>* tablaAux = _tabla;
-            _tabla = new Lista<TElem>();
+			Lista<TElem>* tablaAux = new Lista<TElem>[2 * _tam];
+           // delete [] _tabla;
+           // _tabla = new Lista<TElem>();
+            Nat tamAnt = _tam;
             _tam = 2 * _tam;
             int i = 0;
-            while (i < tablaAux->Longitud())
+            while (i < tamAnt)
             {
 
-                auto it = tablaAux[i].CrearIt();
+                auto it = _tabla[i].CrearIt();
                 while (it.HaySiguiente())
                 {
                     TElem siguiente = it.Siguiente();
                     it.Avanzar();
-				//	if (it.HaySiguiente())
-				//	{
-						this->Definir(siguiente.clave, siguiente.signif);
-						//_tabla[fn_hash(siguiente.clave)].(siguiente);
-				//	}
+                    tablaAux[fn_hash(siguiente.clave)].AgregarAtras(siguiente);
+                   // it.EliminarSiguiente();
+
+						//this->Definir(siguiente.clave, siguiente.signif);
+
                 }
                 i++;
             }
-           // delete tablaAux;
+            delete [] _tabla;
+            _tabla = tablaAux;
 		}
 	};
 

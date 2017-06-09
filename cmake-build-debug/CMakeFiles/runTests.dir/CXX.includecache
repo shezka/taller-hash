@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jscherman/Desktop/taller-hash/base_alumnos/base/DiccHashCerrado.hpp
+Lista.h
+/home/jscherman/Desktop/taller-hash/base_alumnos/base/Lista.h
+string
+-
+
+/home/jscherman/Desktop/taller-hash/base_alumnos/base/Lista.h
+iostream
+-
+cassert
+-
+
+/home/jscherman/Desktop/taller-hash/base_alumnos/base/tests.cpp
+DiccHashCerrado.hpp
+/home/jscherman/Desktop/taller-hash/base_alumnos/base/DiccHashCerrado.hpp
+gtest/gtest.h
+-
+iostream
+-
+fstream
+-
+
